@@ -11,6 +11,29 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="header">
+      <div>
+          logo
+      </div>
+      <nav>
+          <a href="#">Home</a>
+          <a href="#">News</a>
+      </nav>
+      <nav>
+        <% if logged_in? %>
+          <%= link_to "Log out", logout_path, method: "delete" %>
+          <%= current_user.name %>
+        <% else %>
+          <%= link_to "Log in", login_path%>
+          <%= link_to "Register", new_users_path%>
+        <% end %>
+        <a href="#">Write an article</a>
+      <nav>
+    </div>
+    <div class="main">
+      <%= yield %>
+    </div>
+    <div class="footer">
+    </div>
   </body>
 </html>
