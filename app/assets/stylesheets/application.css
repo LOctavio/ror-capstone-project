@@ -159,3 +159,26 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
+
+body {
+  display: flex;
+  flex-flow: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;   
+  border-bottom: 2px solid rgba(138, 133, 130, 1);
+  padding: 35px 20px 0px;
+}
+
+.footer {
+  height: 100px;
+  background-color: rgba(78, 68, 63, 1);
+}
+.main {
+  min-height: 600px;
+}
+
