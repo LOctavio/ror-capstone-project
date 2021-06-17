@@ -182,3 +182,11 @@ body {
   min-height: 600px;
 }
 
+.form-container {
+  text-align: center;
+  width: fit-content;
+  margin: 100px auto;
+  padding: 20px 30px;
+  border: 1px solid rgba(138, 133, 130, 1);
+  border-radius: 20px;
+}
