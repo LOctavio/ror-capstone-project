@@ -1,3 +1,21 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.homepage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-article {
+    height: 300px;
+    width: 100%;
+}
+
+.category {
+    height: 200px;
+    min-width: 300px;
+    max-width: 400px;
+    flex-grow: 1;
+    border: 1px solid black;
+}
